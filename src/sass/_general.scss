@@ -1,0 +1,27 @@
+body,
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h1, h2, h3, h4 {
+    color: hsl(233, 52%, 19%);
+    font-family: 'Volkhov', serif;
+}
+h1 {
+    font-size: 8.4rem;
+}
+h2 { font-size: 5rem;}
+h3 { font-size:2rem}
+h4{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.8rem;
+}
+a,ul {
+    font-size: 1.6rem;
+    link-style: none;
+    list-style: none;
+}
