@@ -1,1 +1,28 @@
 /* ==========desktop=========*/
+
+// colors 
+$primary: white;
+$secondary:#df6a53;
+$btn: hsl(41, 99%, 47%);
+$tertiary:hsl(233, 52%, 19%);
+
+// spacing
+$margin-l: 5rem 10rem;
+$nav-bar-l: 2rem 10rem;
+$sec-header-text: 3rem 2rem 5rem 10rem;
+$emailParagraph: 3.3rem;
+
+//layouts
+.grid {
+    display: grid;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}

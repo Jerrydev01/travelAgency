@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,67 @@
 
     <!-- ===========GOOGLE FONTS =========-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Volkhov:wght@700&display=swap"
+        rel="stylesheet">
 
-<!-- =============local style link============ -->
-<link rel="stylesheet" href="/public/css/style.css" type="text/css">
+    <!-- ============font awesome ==============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- =============local style link============ -->
+    <link rel="stylesheet" href="/public/css/style.css" type="text/css">
 
 
 </head>
+
 <body>
-    <header>
-        <h1>you</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint dignissimos quisquam assumenda ex. Pariatur aperiam, harum eum sit possimus ullam itaque ab corporis illum necessitatibus vero unde id rerum?</p>
-    </header>
+    <section id="jerry-header">
+        <header class="jerry-header-section">
+            <!-- ========== nav bar section============ -->
+            <div class="jerry-nav-block flex">
+                <div class="jerry-logo">
+                    <img src="./img/logo.png" alt="jerry">
+                </div>
+                <nav class="jerry-nav-menu">
+                    <ul class="flex">
+                        <li><a href="">Destinations</a></li>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="">Flights</a></li>
+                        <li><a href="">Bookings</a></li>
+                        <li><a href="">login</a></li>
+                        <li class="signup"><a href="">Sign Up</a></li>
+                        <li class="en-toggle"><a href="">En <i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- ========== nav bar section end============ -->
+
+            <!-- ============== hero text/img section-=================-->
+            <div class="jerry-hero-area grid">
+                <div class="jerry-hero-text">
+                    <h3>Best Destinations around the world</h3>
+                    <h1>Travel, enjoy
+                        and live a new
+                        and full life</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eaque error velit aliquid
+                        perspiciatis, sapiente harum ullam explicabo molestias asperiores mollitia esse impedit corrupti
+                        similique expedita.</p>
+                    <div class="btn-header flex">
+                        <div class="btn1"><a href="">Find out more</a></div>
+                        <div class="btn2 flex">
+                            <div> <a href=""><i class="fa-solid fa-play"></i></a></div>
+                            <div><a href="">Play Demo</a></div>
+                        </div>
+                    </div>
+                </div>
+                <picture class="jerry-img">
+                    <img src="./img/traveler.png" alt="traveler.png">
+                </picture>
+            </div>
+            <!-- ============== hero text/img section end=================-->
+        </header>
+    </section>
 </body>
+
 </html>

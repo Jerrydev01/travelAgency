@@ -1,0 +1,79 @@
+@use '../sass/_utilities.scss'as *;
+
+
+
+.jerry-header-section {
+    background-image: url('../img/hero-bg.png');
+    background-size: cover cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    .jerry-nav-block {
+        justify-content: space-between;
+        align-items: center;
+        padding: $nav-bar-l;
+
+        .jerry-nav-menu {
+
+            ul {
+                li {
+                    padding-inline: 2rem;
+                }
+
+                .signup {
+                    border-radius: .5rem;
+                    border: 1px solid $tertiary;
+                }
+            }
+
+        }
+    }
+
+    .jerry-hero-area {
+        margin: $sec-header-text;
+        grid-template-columns: 45% 55%;
+
+        .jerry-hero-text {
+            h1 {
+                margin-block: 1rem;
+            }
+
+            .btn-header {
+                margin-top: 2rem;
+                gap: 2rem;
+                align-items: center;
+
+
+                .btn1 {
+                    padding: 1rem 1.5rem;
+                    color: $primary;
+                    background-color: $btn;
+                    border-radius: 1rem;
+                }
+
+                .btn2 {
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: center;
+
+                    div:nth-child(1) {
+                        background-color: $secondary;
+                        color: $primary;
+                        // padding: 2rem;
+                        height: 4rem;
+                        box-shadow: 0px 0px 25px 3px #DF6A53;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+
+                        a {
+                            display: block;
+                            position: relative;
+                            transform: translate(50%, 50%)
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

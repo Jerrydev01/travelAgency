@@ -74,19 +74,39 @@ meter {
   -webkit-user-drag: element;
 }
 
+/* ==========desktop=========*/
+.grid {
+  display: grid;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
 body,
 html {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: hsl(233deg, 52%, 19%);
   font-family: "Volkhov", serif;
 }
 
 h1 {
-  font-size: 8.4rem;
+  font-size: 7rem;
 }
 
 h2 {
@@ -95,6 +115,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  color: #df6a53;
 }
 
 h4 {
@@ -105,8 +126,64 @@ p {
   font-size: 1.8rem;
 }
 
-a, ul {
+a,
+ul {
   font-size: 1.6rem;
-  link-style: none;
+  text-decoration: none;
   list-style: none;
+}
+
+.jerry-header-section {
+  background-image: url("../img/hero-bg.png");
+  background-size: cover cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.jerry-header-section .jerry-nav-block {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+.jerry-header-section .jerry-nav-block .jerry-nav-menu ul li {
+  padding-inline: 2rem;
+}
+.jerry-header-section .jerry-nav-block .jerry-nav-menu ul .signup {
+  border-radius: 0.5rem;
+  border: 1px solid hsl(233deg, 52%, 19%);
+}
+.jerry-header-section .jerry-hero-area {
+  margin: 3rem 2rem 5rem 10rem;
+  grid-template-columns: 45% 55%;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text h1 {
+  margin-block: 1rem;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text .btn-header {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text .btn-header .btn1 {
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: hsl(41deg, 99%, 47%);
+  border-radius: 1rem;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text .btn-header .btn2 {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text .btn-header .btn2 div:nth-child(1) {
+  background-color: #df6a53;
+  color: white;
+  height: 4rem;
+  box-shadow: 0px 0px 25px 3px #DF6A53;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text .btn-header .btn2 div:nth-child(1) a {
+  display: block;
+  position: relative;
+  transform: translate(50%, 50%);
 }
