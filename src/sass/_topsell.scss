@@ -1,0 +1,70 @@
+@use '../sass/_utilities.scss'as *;
+
+.jerry-top-sell {
+    padding: $margin-l;
+    // background-image: url('../img/spring.png');
+    // background-repeat: no-repeat;
+    // background-position: right center;
+
+    .jerry-top-sell-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        place-items: center;
+        margin-top: 5rem;
+
+        a {
+            color: $tertiary;
+
+
+            .selling-card {
+                max-width: 30rem;
+                border-radius: 2.4rem;
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+                    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+                    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+                    0px 20px 13px rgba(0, 0, 0, 0.01),
+                    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+                    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+                background-color: $primary;
+                transition: all 0.1s ease;
+
+                &:hover {
+                    background-color: $secondary;
+                    color: $primary;
+
+                    h4 {
+                        color: $primary;
+                    }
+
+                    img {
+                        -webkit-filter: grayscale(1);
+                        filter: grayscale(1);
+                    }
+                }
+
+                &>img {
+                    width: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 1 / 1;
+                    border-top-right-radius: 2.4rem;
+                    border-top-left-radius: 2.4rem;
+
+                }
+
+                .sell-country {
+                    margin: 1.5rem;
+                    justify-content: space-between;
+                }
+
+                .sell {
+                    align-items: center;
+                    padding: 1rem 1.5rem 2rem 1.5rem;
+
+                    p {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

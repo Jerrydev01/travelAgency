@@ -3,10 +3,10 @@
 
 
 .jerry-header-section {
-    background-image: url('../img/hero-bg.png');
-    background-size: cover cover;
+    background-image: url('../img/hero-bg.png'), url('../img/herobg2.png');
+    background-size: cover cover, cover cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right, top left;
 
     .jerry-nav-block {
         justify-content: space-between;
@@ -32,14 +32,23 @@
     .jerry-hero-area {
         margin: $sec-header-text;
         grid-template-columns: 45% 55%;
+        align-items: center;
 
         .jerry-hero-text {
             h1 {
                 margin-block: 1rem;
+                background-image: url('../img/h1img.png');
+                background-size: cover cover;
+                background-repeat: no-repeat;
+                background-position: right 30%;
+            }
+
+            p {
+                margin-block: 1rem 3rem;
             }
 
             .btn-header {
-                margin-top: 2rem;
+
                 gap: 2rem;
                 align-items: center;
 
@@ -49,6 +58,11 @@
                     color: $primary;
                     background-color: $btn;
                     border-radius: 1rem;
+                    box-shadow: 0px 0px 15px 3px #DF6A53;
+
+                    a {
+                        color: $primary;
+                    }
                 }
 
                 .btn2 {
@@ -58,7 +72,7 @@
 
                     div:nth-child(1) {
                         background-color: $secondary;
-                        color: $primary;
+
                         // padding: 2rem;
                         height: 4rem;
                         box-shadow: 0px 0px 25px 3px #DF6A53;
@@ -68,7 +82,8 @@
                         a {
                             display: block;
                             position: relative;
-                            transform: translate(50%, 50%)
+                            transform: translate(40%, 40%);
+                            color: $primary;
                         }
                     }
 

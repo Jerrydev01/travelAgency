@@ -6,7 +6,7 @@ html {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -22,12 +22,12 @@ h1 {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h3 {
     font-size: 2rem;
-    color: $secondary;
+
 }
 
 h4 {
@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 a,
