@@ -1,8 +1,10 @@
 @use '../sass/_utilities.scss'as *;
 
 .jerry-booking {
-    margin: $margin-l;
-    padding-inline: 3rem;
+    padding: 5rem 2rem;
+    // padding-inline: 2rem;
+    margin: 5rem auto;
+    width: 80%;
 
     .book-text-head {
         grid-template-columns: 50% 50%;

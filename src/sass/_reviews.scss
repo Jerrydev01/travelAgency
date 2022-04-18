@@ -1,0 +1,16 @@
+@use '../sass/_utilities.scss'as *;
+
+.jerry-reviews {
+    padding: 5rem 2rem;
+    margin: 5rem auto;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    .reviews2 {
+        .jerry-slide {
+            .jerry-slide-wrapper {}
+        }
+    }
+}

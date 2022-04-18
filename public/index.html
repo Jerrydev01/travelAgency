@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- =============local style link============ -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="/public/css/style.css" type="text/css">
 
 
 </head>
@@ -217,10 +218,55 @@
                 <div class="book2">
                     <img src="./img/booking-img.png" alt="">
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- ==========booking section end ============-->
+
+    <section id="reviews">
+        <div class="jerry-reviews grid">
+            <div class="reviews1">
+                <h4>Testimonials</h4>
+                <h2>What people say
+                    about Us.</h2>
+            </div>
+            <div class="reviews2">
+
+                <div class="splide" role="group" aria-label="Travel Agency reviews">
+                    <div class="splide__track jerry-slide">
+                        <div class="splide__list jerry-slide-wrapper">
+                            <div class="splide__slide splide1">Slide 01</div>
+                            <div class="splide__slide splide2">Slide 02</div>
+                            <div class="splide__slide splide3">Slide 03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/app.js"></script>
+
+
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+
+    <script>
+        var splide = new Splide('.splide', {
+            direction: 'ttb',
+            height: '10rem',
+            wheel: true,
+            loop: true,
+            autoplay: true,
+            pauseOnHover: true,
+            type: 'loop',
+        });
+        splide.mount();
+    </script>
+    <!-- Splide JS f-->
 </body>
 
 </html>
