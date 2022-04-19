@@ -235,9 +235,36 @@
                 <div class="splide" role="group" aria-label="Travel Agency reviews">
                     <div class="splide__track jerry-slide">
                         <div class="splide__list jerry-slide-wrapper">
-                            <div class="splide__slide splide1">Slide 01</div>
-                            <div class="splide__slide splide2">Slide 02</div>
-                            <div class="splide__slide splide3">Slide 03</div>
+                            <div class="splide__slide splider">
+                                <div class="review-img">
+                                    <img src="./img/rev2.svg" alt="">
+
+                                </div>
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>jerry Dev</h4>
+                                <small>Somewhere in the world</small>
+                            </div>
+                            <div class="splide__slide splider">
+                                <div class="review-img">
+                                    <img src="./img/rev1.svg" alt="">
+
+                                </div>
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>jane Dev</h4>
+                                <small>Somewhere in the world</small>
+                            </div>
+                            <div class="splide__slide splider">
+                                <div class="review-img">
+                                    <img src="./img/rev3.svg" alt="">
+
+                                </div>
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>james Dev</h4>
+                                <small>Somewhere in the world</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,7 +272,43 @@
         </div>
     </section>
 
+    <!--================ branding section========================-->
 
+    <section id="brand">
+        <div class="brand-area">
+            <div class="jerry-brand flex">
+                <img src="./img/image31.png" alt="">
+                <img src="./img/image27.png" alt="">
+                <img src="./img/image28.png" alt="">
+                <img src="./img/image30.png" alt="">
+                <img src="./img/image29.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--================ branding section end========================-->
+
+    <!--================ newsletter section========================-->
+    <section id="newsletter">
+        <div class="newsletter-bg">
+            <div class="jerry-newsletter">
+                <div class="newsletter-inner">
+                    <h2>Subscribe to get information, latest news and other
+                        interesting offers about Cobham</h2>
+                </div>
+                <form class="flex" action="" method="post">
+                    <div class="email1">
+                        <input type="email" name="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="email2">
+                        <input class="input-icon" type="submit" value="Subscribe">
+                    </div>
+                </form>
+                <img src="./img/circle-plane.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--================ newsletter section end========================-->
 
 
     <script src="js/app.js"></script>
@@ -255,16 +318,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
 
     <script>
-        var splide = new Splide('.splide', {
+        var splide = new Splide(' .splide', {
             direction: 'ttb',
-            height: '10rem',
+            height: '25rem',
             wheel: true,
             loop: true,
             autoplay: true,
             pauseOnHover: true,
             type: 'loop',
-        });
-        splide.mount();
+        }); splide.mount();
     </script>
     <!-- Splide JS f-->
 </body>

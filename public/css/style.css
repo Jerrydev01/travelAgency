@@ -218,7 +218,7 @@
 }
 
 .splide__pagination__page {
-  background: #ccc;
+  background: hsl(41deg, 99%, 47%);
   border: 0;
   border-radius: 50%;
   display: inline-block;
@@ -455,6 +455,7 @@ select {
   display: flex;
 }
 
+/*================ global styles========================*/
 body,
 html {
   font-size: 10px;
@@ -497,6 +498,7 @@ ul {
   list-style: none;
 }
 
+/*================ global styles end========================*/
 .jerry-header-section {
   background-image: url("../img/hero-bg.png"), url("../img/herobg2.png");
   background-size: cover cover, cover cover;
@@ -630,8 +632,9 @@ ul {
   opacity: 1;
 }
 
+/*================ top selling section========================*/
 .jerry-top-sell {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2rem 2rem;
   margin: 5rem auto;
   width: 80%;
 }
@@ -681,6 +684,7 @@ ul {
   padding-left: 1rem;
 }
 
+/*================ top selling section end========================*/
 .jerry-booking {
   padding: 5rem 2rem;
   margin: 5rem auto;
@@ -703,11 +707,130 @@ ul {
   margin-block: 1rem;
 }
 
+/*================ reviews section========================*/
 .jerry-reviews {
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   margin: 5rem auto;
   width: 80%;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+.jerry-reviews .reviews2 {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.jerry-reviews .reviews2 .jerry-slide .jerry-slide-wrapper {
+  padding: 2rem;
+}
+.jerry-reviews .reviews2 .jerry-slide .jerry-slide-wrapper img {
+  width: 5rem;
+  position: relative;
+  left: -3rem;
+  top: -2rem;
+}
+.jerry-reviews .reviews2 .jerry-slide .jerry-slide-wrapper .splider {
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  border-radius: 2.4rem;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  background-color: white;
+}
+.jerry-reviews .reviews2 .jerry-slide .jerry-slide-wrapper .splider h4 {
+  padding-block: 1rem;
+}
+
+#splide01 > div.splide__arrows.splide__arrows--ttb > button.splide__arrow.splide__arrow--next,
+#splide01 > div.splide__arrows.splide__arrows--ttb > button.splide__arrow.splide__arrow--prev {
+  display: none;
+}
+
+/*================ reviews section end========================*/
+/*================ branding section========================*/
+.brand-area {
+  padding: 2rem 2rem;
+  margin: 5rem;
+}
+.brand-area .jerry-brand {
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+.brand-area .jerry-brand img {
+  width: 17rem;
+  object-fit: contain;
+  padding: 1rem;
+}
+.brand-area .jerry-brand img:hover {
+  border-radius: 2.4rem;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  background-color: white;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+/*================ branding section end========================*/
+/*================ newsletter section========================*/
+.newsletter-bg {
+  background-image: url("../img/newsletter3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-bottom: 2rem;
+  background-size: 15rem;
+}
+
+.jerry-newsletter {
+  background-image: url("../img/newsletter1.png"), url("../img/newsletter2.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: contain;
+  background-color: #DFD7F9;
+  max-width: 80%;
+  border-radius: 12.9rem 2rem 2rem 2rem;
+  padding: 3rem 2rem;
+  display: grid;
+  place-items: center;
+  margin: 5rem auto;
+  position: relative;
+}
+.jerry-newsletter .newsletter-inner h2 {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 60vw;
+  font-size: 3rem;
+  margin-block: 2rem;
+}
+.jerry-newsletter form {
+  gap: 1rem;
+  align-items: center;
+  margin-block: 1rem 3rem;
+}
+.jerry-newsletter form input[type=email] {
+  border: none;
+  outline: none;
+  padding: 1rem 5rem;
+  background-image: url("../img/input-icon.svg");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+.jerry-newsletter form input[type=submit] {
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #df6a53;
+  color: white;
+  font-size: 1.6rem;
+}
+.jerry-newsletter img:last-child {
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  transform: translateY(-1rem);
+  width: 5rem;
 }

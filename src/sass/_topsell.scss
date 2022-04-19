@@ -1,7 +1,9 @@
+/*================ top selling section========================*/
+
 @use '../sass/_utilities.scss'as *;
 
 .jerry-top-sell {
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     margin: 5rem auto;
     width: 80%;
     // background-image: url('../img/spring.png');
@@ -70,3 +72,5 @@
         }
     }
 }
+
+/*================ top selling section end========================*/

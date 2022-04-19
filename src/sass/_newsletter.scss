@@ -1,0 +1,79 @@
+/*================ newsletter section========================*/
+
+@use '../sass/_utilities.scss'as *;
+
+.newsletter-bg {
+    background-image: url('../img/newsletter3.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: 2rem;
+    background-size: 15rem;
+
+}
+
+.jerry-newsletter {
+    background-image: url('../img/newsletter1.png'), url('../img/newsletter2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    background-size: contain;
+    background-color: #DFD7F9;
+    max-width: 80%;
+    border-radius: 12.9rem 2rem 2rem 2rem;
+
+    padding: 3rem 2rem;
+    display: grid;
+    place-items: center;
+    margin: 5rem auto;
+    position: relative;
+
+    .newsletter-inner {
+        h2 {
+            text-align: center;
+            display: grid;
+            place-items: center;
+            width: 60vw;
+            font-size: 3rem;
+            margin-block: 2rem;
+        }
+    }
+
+    form {
+        gap: 1rem;
+        align-items: center;
+        margin-block: 1rem 3rem;
+
+        input[type="email"] {
+            border: none;
+            outline: none;
+            padding: 1rem 5rem;
+            background-image: url('../img/input-icon.svg');
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position: 1rem center;
+            background-color: $primary;
+            border-radius: 1rem;
+            font-size: 1.6rem;
+
+
+        }
+
+        input[type="submit"] {
+            border: none;
+            outline: none;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            background-color: $secondary;
+            color: $primary;
+            font-size: 1.6rem;
+
+        }
+    }
+
+    img:last-child {
+        position: absolute;
+        top: 0;
+        right: -2rem;
+        transform: translateY(-1rem);
+        width: 5rem;
+    }
+}

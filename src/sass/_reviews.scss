@@ -1,16 +1,58 @@
+/*================ reviews section========================*/
+
 @use '../sass/_utilities.scss'as *;
 
 .jerry-reviews {
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     margin: 5rem auto;
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 
     .reviews2 {
+        margin-top: 4rem;
+        padding: 2rem;
+
         .jerry-slide {
-            .jerry-slide-wrapper {}
+
+            .jerry-slide-wrapper {
+
+                padding: 2rem;
+
+                img {
+                    width: 5rem;
+                    position: relative;
+                    left: - 3rem;
+                    top: -2rem;
+                }
+
+                .splider {
+                    margin: 0 2rem 2rem 2rem;
+                    padding: 2rem;
+                    border-radius: 2.4rem;
+                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+                        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+                        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+                        0px 20px 13px rgba(0, 0, 0, 0.01),
+                        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+                        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+                    background-color: $primary;
+
+                    h4 {
+                        padding-block: 1rem;
+                    }
+                }
+            }
         }
     }
 }
+
+//  hiding splide prev and next buttons
+#splide01>div.splide__arrows.splide__arrows--ttb>button.splide__arrow.splide__arrow--next,
+#splide01>div.splide__arrows.splide__arrows--ttb>button.splide__arrow.splide__arrow--prev {
+    display: none;
+}
+
+/*================ reviews section end========================*/
