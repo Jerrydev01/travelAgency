@@ -1169,7 +1169,7 @@ a:hover {
     width: 80vw;
   }
   .jerry-newsletter form {
-    width: 100%;
+    width: 90vw;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 1rem;
@@ -1179,6 +1179,7 @@ a:hover {
     background-image: none;
     border-radius: 1rem;
     font-size: 1.6rem;
+    width: 100%;
   }
   .jerry-newsletter form input[type=submit] {
     padding: 1rem 1rem;
