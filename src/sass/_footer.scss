@@ -1,0 +1,68 @@
+/*================ footer section========================*/
+
+@use '../sass/_utilities.scss'as *;
+
+.jerry-footer {
+    padding: 3rem 2rem;
+    margin: 5rem;
+
+    a {
+        color: $tertiary;
+
+        &:hover {
+            color: $secondary;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .footer-inner {
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+        li {
+            padding-block: .5rem;
+        }
+
+        .foot-list5 {
+            ul {
+
+
+                div {
+                    align-items: center;
+
+                    img {
+                        width: 5rem;
+                        object-fit: cover;
+
+                        &:hover {
+                            filter: grayscale(1);
+                        }
+                    }
+                }
+
+                .app {
+                    gap: 1rem;
+                    width: 7rem;
+                    object-fit: contain;
+                    padding-bottom: 1rem;
+
+                    &:hover {
+                        filter: grayscale(1);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 3rem;
+}

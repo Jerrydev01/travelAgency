@@ -834,3 +834,51 @@ ul {
   transform: translateY(-1rem);
   width: 5rem;
 }
+
+/*================ footer section========================*/
+.jerry-footer {
+  padding: 3rem 2rem;
+  margin: 5rem;
+}
+.jerry-footer a {
+  color: hsl(233deg, 52%, 19%);
+}
+.jerry-footer a:hover {
+  color: #df6a53;
+  transition: all 0.3s ease;
+}
+.jerry-footer .footer-inner {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+.jerry-footer .footer-inner p {
+  padding-bottom: 1rem;
+}
+.jerry-footer .footer-inner li {
+  padding-block: 0.5rem;
+}
+.jerry-footer .footer-inner .foot-list5 ul div {
+  align-items: center;
+}
+.jerry-footer .footer-inner .foot-list5 ul div img {
+  width: 5rem;
+  object-fit: cover;
+}
+.jerry-footer .footer-inner .foot-list5 ul div img:hover {
+  filter: grayscale(1);
+}
+.jerry-footer .footer-inner .foot-list5 ul .app {
+  gap: 1rem;
+  width: 7rem;
+  object-fit: contain;
+  padding-bottom: 1rem;
+}
+.jerry-footer .footer-inner .foot-list5 ul .app:hover {
+  filter: grayscale(1);
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 3rem;
+}
