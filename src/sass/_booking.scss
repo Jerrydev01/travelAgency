@@ -1,20 +1,19 @@
 @use '../sass/_utilities.scss'as *;
 
 .jerry-booking {
-    padding: 5rem 2rem;
+    padding: $margin-l;
     // padding-inline: 2rem;
-    margin: 5rem auto;
-    width: 80%;
+    margin: 2rem auto;
+
 
     .book-text-head {
-        grid-template-columns: 50% 50%;
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
 
         h2 {
             margin-bottom: 1rem;
-            ;
+
         }
 
         .book1 {
@@ -27,6 +26,10 @@
                 }
 
             }
+        }
+
+        .book2 {
+            flex-grow: 1;
         }
     }
 }

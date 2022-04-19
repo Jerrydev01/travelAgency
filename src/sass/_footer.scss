@@ -2,18 +2,19 @@
 
 @use '../sass/_utilities.scss'as *;
 
-.jerry-footer {
-    padding: 3rem 2rem;
-    margin: 5rem;
 
-    a {
-        color: $tertiary;
+a {
+    color: $tertiary;
 
-        &:hover {
-            color: $secondary;
-            transition: all 0.3s ease;
-        }
+    &:hover {
+        color: $secondary;
+        transition: all 0.3s ease;
     }
+}
+
+.jerry-footer {
+    padding: $margin-l;
+
 
     .footer-inner {
         grid-template-columns: repeat(5, 1fr);

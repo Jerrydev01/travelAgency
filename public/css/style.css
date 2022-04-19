@@ -461,6 +461,7 @@ html {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
@@ -528,6 +529,9 @@ ul {
   background-size: cover cover;
   background-repeat: no-repeat;
   background-position: right 30%;
+}
+.jerry-header-section .jerry-hero-area .jerry-hero-text h3 {
+  color: #df6a53;
 }
 .jerry-header-section .jerry-hero-area .jerry-hero-text p {
   margin-block: 1rem 3rem;
@@ -686,12 +690,10 @@ ul {
 
 /*================ top selling section end========================*/
 .jerry-booking {
-  padding: 5rem 2rem;
-  margin: 5rem auto;
-  width: 80%;
+  padding: 5rem 10rem;
+  margin: 2rem auto;
 }
 .jerry-booking .book-text-head {
-  grid-template-columns: 50% 50%;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -706,16 +708,22 @@ ul {
 .jerry-booking .book-text-head .book1 .book-inner div {
   margin-block: 1rem;
 }
+.jerry-booking .book-text-head .book2 {
+  flex-grow: 1;
+}
 
 /*================ reviews section========================*/
 .jerry-reviews {
-  padding: 2rem 2rem;
-  margin: 5rem auto;
-  width: 80%;
+  padding: 5rem 10rem;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+.jerry-reviews .reviews1 h2,
+.jerry-reviews .reviews1 p {
+  width: 80%;
+  margin-bottom: 1rem;
 }
 .jerry-reviews .reviews2 {
   margin-top: 4rem;
@@ -749,12 +757,15 @@ ul {
 /*================ reviews section end========================*/
 /*================ branding section========================*/
 .brand-area {
-  padding: 2rem 2rem;
-  margin: 5rem;
+  padding: 5rem 10rem;
 }
 .brand-area .jerry-brand {
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
-  padding-block: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 .brand-area .jerry-brand img {
   width: 17rem;
@@ -777,6 +788,7 @@ ul {
   background-position: right bottom;
   padding-bottom: 2rem;
   background-size: 15rem;
+  padding: 5rem 10rem;
 }
 
 .jerry-newsletter {
@@ -785,9 +797,7 @@ ul {
   background-position: bottom left, top right;
   background-size: contain;
   background-color: #DFD7F9;
-  max-width: 80%;
   border-radius: 12.9rem 2rem 2rem 2rem;
-  padding: 3rem 2rem;
   display: grid;
   place-items: center;
   margin: 5rem auto;
@@ -798,13 +808,14 @@ ul {
   display: grid;
   place-items: center;
   width: 60vw;
+  padding: 2rem;
   font-size: 3rem;
   margin-block: 2rem;
 }
 .jerry-newsletter form {
   gap: 1rem;
   align-items: center;
-  margin-block: 1rem 3rem;
+  margin-block: 1rem 5rem;
 }
 .jerry-newsletter form input[type=email] {
   border: none;
@@ -836,16 +847,16 @@ ul {
 }
 
 /*================ footer section========================*/
-.jerry-footer {
-  padding: 3rem 2rem;
-  margin: 5rem;
-}
-.jerry-footer a {
+a {
   color: hsl(233deg, 52%, 19%);
 }
-.jerry-footer a:hover {
+a:hover {
   color: #df6a53;
   transition: all 0.3s ease;
+}
+
+.jerry-footer {
+  padding: 5rem 10rem;
 }
 .jerry-footer .footer-inner {
   grid-template-columns: repeat(5, 1fr);
@@ -881,4 +892,313 @@ ul {
 .copyright {
   text-align: center;
   padding-bottom: 3rem;
+}
+
+/*================ media query styles========================*/
+/* =========== media screen for landscape tablet=============*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  /*================ header =================*/
+  .jerry-header-section .jerry-nav-block {
+    padding: 2rem 7rem;
+  }
+  .jerry-header-section .jerry-hero-area {
+    margin: 3rem 7rem;
+  }
+
+  /*================ header end =================*/
+  /*================ category section =================*/
+  #category .jerry-cat-sec {
+    margin: 5rem 7rem;
+  }
+
+  /*================ category section =================*/
+  /*================ booking section =================*/
+  .jerry-booking {
+    padding: 5rem 7rem;
+  }
+  .jerry-booking .book-text-head .book1 .book-inner {
+    width: 100%;
+  }
+
+  /*================ booking section end =================*/
+  /*================ reviews section =================*/
+  .jerry-reviews {
+    padding: 5rem 7rem;
+  }
+
+  /*================ reviews section end =================*/
+  /*================ branding section========================*/
+  .brand-area {
+    padding: 5rem 7rem;
+  }
+
+  /*================ branding section end========================*/
+  /*================ newsletter section========================*/
+  .newsletter-bg {
+    padding: 5rem 7rem;
+  }
+
+  /*================ newsletter section end========================*/
+  /*================ footer section========================*/
+  .jerry-footer {
+    padding: 5rem 7rem;
+  }
+}
+/* =========== media screen for portrait tablet=============*/
+@media only screen and (min-width: 650px) and (max-width: 950px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  /*================ header =================*/
+  .jerry-header-section .jerry-nav-block {
+    padding: 2rem 7rem;
+  }
+  .jerry-header-section .jerry-hero-area {
+    grid-template-columns: 1fr;
+    margin: 3rem 7rem;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  /*================ header end =================*/
+  /*================ category section =================*/
+  #category .jerry-cat-sec {
+    margin: 5rem 7rem;
+  }
+  #category .jerry-cat-sec .jerry-cat-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*================ category section end=================*/
+  /*================ top section =================*/
+  .jerry-top-sell {
+    width: 90%;
+  }
+
+  /*================ top section =================*/
+  /*================ booking section =================*/
+  .jerry-booking {
+    padding: 5rem 7rem;
+  }
+  .jerry-booking .book-text-head {
+    flex-direction: column;
+    gap: 0;
+  }
+  .jerry-booking .book-text-head .book1 .book-inner {
+    width: 100%;
+  }
+
+  /*================ booking section end =================*/
+  /*================ reviews section =================*/
+  .jerry-reviews {
+    padding: 5rem 7rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /*================ branding section========================*/
+  .brand-area {
+    padding: 0 7rem;
+  }
+
+  /*================ branding section end========================*/
+  /*================ newsletter section========================*/
+  .newsletter-bg {
+    padding: 5rem 7rem;
+  }
+
+  .jerry-newsletter .newsletter-inner h2 {
+    font-size: 2rem;
+  }
+
+  /*================ newsletter section end========================*/
+  /*================ footer section========================*/
+  .jerry-footer {
+    padding: 5rem 7rem;
+    justify-content: center;
+  }
+  .jerry-footer .footer-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* =========== media screen for mobile=============*/
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  /*================ header =================*/
+  .jerry-header-section .jerry-nav-block {
+    padding: 2rem 4rem;
+  }
+  .jerry-header-section .jerry-hero-area {
+    grid-template-columns: 1fr;
+    margin: 3rem 4rem;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .jerry-header-section .jerry-hero-area .jerry-img img {
+    max-width: 120%;
+  }
+
+  /*================ header end =================*/
+  /*================ category section =================*/
+  #category .jerry-cat-sec {
+    margin: 5rem 4rem;
+  }
+  #category .jerry-cat-sec .jerry-cat-card {
+    grid-template-columns: 1fr;
+  }
+
+  /*================ category section end=================*/
+  /*================ top section =================*/
+  .jerry-top-sell {
+    width: 90%;
+  }
+  .jerry-top-sell .jerry-top-sell-card {
+    grid-template-columns: 1fr;
+  }
+
+  /*================ top section =================*/
+  /*================ booking section =================*/
+  .jerry-booking {
+    padding: 5rem 4rem;
+  }
+  .jerry-booking .book-text-head {
+    flex-direction: column;
+    gap: 0;
+  }
+  .jerry-booking .book-text-head .book1 .book-inner {
+    width: 100%;
+  }
+
+  /*================ booking section end =================*/
+  /*================ reviews section =================*/
+  .jerry-reviews {
+    padding: 5rem 4rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .jerry-reviews .reviews1 h2,
+.jerry-reviews .reviews1 p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .jerry-reviews .reviews2 {
+    width: 100%;
+    padding: 0;
+  }
+  .jerry-reviews .reviews2 .splide-inner {
+    margin: 2rem 0;
+  }
+  .jerry-reviews .reviews2 .jerry-slide-wrapper {
+    padding: 1rem;
+  }
+  .jerry-reviews .reviews2 .jerry-slide-wrapper .splider {
+    margin: 0;
+    padding: 1rem;
+  }
+  .jerry-reviews .reviews2 .jerry-slide-wrapper .splider p {
+    font-size: 1.4rem;
+  }
+
+  /*================ branding section========================*/
+  .brand-area {
+    padding: 0 4rem;
+  }
+  .brand-area .jerry-brand {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*================ branding section end========================*/
+  /*================ newsletter section========================*/
+  .newsletter-bg {
+    padding: 0;
+  }
+
+  .jerry-newsletter {
+    border-radius: 0;
+  }
+  .jerry-newsletter .newsletter-inner h2 {
+    font-size: 2rem;
+    width: 80vw;
+  }
+  .jerry-newsletter form {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+  .jerry-newsletter form input[type=email] {
+    padding: 1rem 1rem;
+    background-image: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+  }
+  .jerry-newsletter form input[type=submit] {
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+  }
+  .jerry-newsletter img:last-child {
+    display: none;
+  }
+
+  /*================ newsletter section end========================*/
+  /*================ footer section========================*/
+  .jerry-footer {
+    padding: 5rem 4rem;
+    padding-left: 10px;
+    justify-content: center;
+  }
+  .jerry-footer .footer-inner {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+  }
 }

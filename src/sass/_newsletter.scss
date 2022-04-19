@@ -8,6 +8,7 @@
     background-position: right bottom;
     padding-bottom: 2rem;
     background-size: 15rem;
+    padding: $margin-l;
 
 }
 
@@ -17,10 +18,10 @@
     background-position: bottom left, top right;
     background-size: contain;
     background-color: #DFD7F9;
-    max-width: 80%;
+
     border-radius: 12.9rem 2rem 2rem 2rem;
 
-    padding: 3rem 2rem;
+
     display: grid;
     place-items: center;
     margin: 5rem auto;
@@ -32,6 +33,7 @@
             display: grid;
             place-items: center;
             width: 60vw;
+            padding: 2rem;
             font-size: 3rem;
             margin-block: 2rem;
         }
@@ -40,7 +42,7 @@
     form {
         gap: 1rem;
         align-items: center;
-        margin-block: 1rem 3rem;
+        margin-block: 1rem 5rem;
 
         input[type="email"] {
             border: none;
